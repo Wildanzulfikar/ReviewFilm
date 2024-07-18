@@ -38,7 +38,7 @@ const getDirectors = function(crewList) {
 }
 
 const filterVideos = function(videoList) {
-    return videoList.filter(({ type, site }) => (type === "Trailer" || type === "Teaser") && site === "Youtube");
+    return videoList.filter(({ type, site }) => (type === "Trailer" || type === "Teaser") && (site === "YouTube"));
 }
 
 fetchDataFromServer(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${api_key}&append_to_response=casts,videos,images,releases`, function (movie) {
@@ -116,17 +116,16 @@ fetchDataFromServer(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${api
 
                 <div class="slider-list">
                     <div class="slider-inner">
-
                     </div>
                 </div>
 
             </div>
     `;
 
+
     for (const { key, name } of filterVideos(videos)) {
 
-        console.log(key)
-
+        
         const videoCard = document.createElement("div");
         videoCard.classList.add("video-card");
 

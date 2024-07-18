@@ -37,7 +37,7 @@ export function sidebar () {
 
             <div class="sidebar-footer">
                 <p class="copyright">
-                    copyright 2023 <a href="">WildanZulfikar</a>
+                    copyright 2023 <a href="">Perintis</a>
                 </p>
                 <img src="./assets/images/tmdb-logo.svg" width="130" height="17" alt="the movie database logo">
             </div>    
